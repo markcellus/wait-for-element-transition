@@ -25,7 +25,7 @@ Let's say you have the problem (that many of us have) where you need to wait for
 }
 ```
 
-You can call the `waitForTransition` method to wait until the element finishes its css transition before doing other
+You can call the `waitForElementTransition` method to wait until the element finishes its css transition before doing other
 things in your javascript code. Like so:
 
 ```javascript
