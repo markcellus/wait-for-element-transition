@@ -2,7 +2,7 @@
   "name": "wait-for-element-transition",
   "version": "0.1.1",
   "description": "Wait for an element to finish its CSS transition",
-  "main": "index.js",
+  "main": "dist/wait-for-element-transition.js",
   "scripts": {
     "test": "bt test"
   },
@@ -38,26 +38,14 @@
     "url": "https://github.com/mkay581/wait-for-element-transition/issues"
   },
   "homepage": "https://github.com/mkay581/wait-for-element-transition#readme",
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "es2015"
-          ]
-        }
-      ]
-    ]
-  },
   "dependencies": {
-    "babel-preset-es2015": "^6.16.0",
-    "babelify": "^7.3.0",
-    "browserify": "^14.1.0",
     "es6-promise": "^4.1.1"
   },
   "devDependencies": {
     "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.1.0",
     "build-tools": "^7.2.3",
     "sinon": "^2.3.4"
   }
