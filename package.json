@@ -6,6 +6,9 @@
   "scripts": {
     "test": "bt test"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mkay581/wait-for-element-transition.git"
