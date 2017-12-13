@@ -1,6 +1,6 @@
 {
   "name": "wait-for-element-transition",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Wait for an element to finish its CSS transition",
   "main": "dist/wait-for-element-transition.js",
   "scripts": {

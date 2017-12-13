@@ -1,5 +1,5 @@
 /** 
-* wait-for-element-transition - v0.1.1.
+* wait-for-element-transition - v1.0.0.
 * git+https://github.com/mkay581/wait-for-element-transition.git
 * Copyright 2017 Mark Kennedy. Licensed MIT.
 */
