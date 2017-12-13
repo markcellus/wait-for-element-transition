@@ -31,7 +31,7 @@ things in your javascript code. Like so:
 ```javascript
 
 // ES6 import
-import {waitForElementTransition} from 'wait-for-element-transition';
+import waitForElementTransition from 'wait-for-element-transition';
 
 // OR use dist file
 <script type="text/javascript" src="/dist/wait-for-element-transition.min.js"></script>
@@ -44,7 +44,7 @@ waitForElementTransition(element).then(() => {
 });
 ```
 
-If the element has already transitioned before the `waitForElementTransition()` is called, the `waitForElementTransition()`s promise will resolve immediately. So you can always guarantee that your code will run, just as it would synchronously. 
- 
+If the element has already transitioned before the `waitForElementTransition()` is called, the `waitForElementTransition()`s promise will resolve immediately. So you can always guarantee that your code will run, just as it would synchronously.
+
 
 
