@@ -1,5 +1,3 @@
-let Promise = require('es6-promise').Promise;
-
 /**
  * Takes a value and separates the number and unit into a key/value map.
  * @param v - The value

@@ -41,15 +41,14 @@
     "url": "https://github.com/mkay581/wait-for-element-transition/issues"
   },
   "homepage": "https://github.com/mkay581/wait-for-element-transition#readme",
-  "dependencies": {
-    "es6-promise": "^4.1.1"
-  },
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-es2015": "^6.16.0",
-    "babelify": "^7.3.0",
-    "browserify": "^14.1.0",
-    "build-tools": "^7.2.3",
-    "sinon": "^2.3.4"
+    "babel-plugin-es6-promise": "^1.1.1",
+    "babelify": "^9.0.0",
+    "browserify": "^16.2.2",
+    "build-tools": "^7.2.4",
+    "sinon": "^5.1.1"
   }
 }

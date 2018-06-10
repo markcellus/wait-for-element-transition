@@ -3,9 +3,10 @@ let transform = [
     "babelify",
     {
       "presets": [
-        "es2015"
+        "@babel/preset-env",
       ],
       "plugins": [
+        "es6-promise",
         "add-module-exports" // to ensure dist files are exported without the "default" property
       ]
     }
