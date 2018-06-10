@@ -1,6 +1,6 @@
 import sinon from 'sinon';
 import assert from 'assert';
-import waitForElementTransition from '../src/wait-for-element-transition';
+import waitForElementTransition from '../wait-for-element-transition';
 
 
 describe('waitForElementTransition', function () {
