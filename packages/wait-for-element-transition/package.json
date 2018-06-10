@@ -9,7 +9,7 @@
     "minify": "uglifyjs dist/wait-for-element-transition.js -o dist/wait-for-element-transition-min.js",
     "build-dist": "rm -rf dist/* && browserify wait-for-element-transition.js -o dist/wait-for-element-transition.js -t [ babelify ] --standalone waitForElementTransition && npm run minify",
     "preversion": "npm test",
-    "version": "npm run build-dist && git add -A dist package.json package-lock.json",
+    "version": "npm run build-dist && git add dist package-lock.json package.json",
     "postversion": "git push && git push --tags"
   },
   "publishConfig": {
@@ -20,7 +20,7 @@
     "url": "git+https://github.com/mkay581/wait-for-element-transition.git"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.11.0"
   },
   "author": "Mark Kennedy <mark@heyimmark.com> (heyimmark.com)",
   "keywords": [
