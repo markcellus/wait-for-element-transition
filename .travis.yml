@@ -1,3 +1,7 @@
 language: node_js
 node_js:
-  - '6'
+  - 'lts/*'
+env:
+  - TEST_DIR=packages/wait-for-element-transition
+#  - TEST_DIR=packages/wait-for-element-animation
+script: cd $TEST_DIR && npm install && npm test
