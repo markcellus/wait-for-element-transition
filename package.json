@@ -1,6 +1,6 @@
 {
   "name": "wait-for-element-transition",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Easily wait for an element to complete it's transition using native vanilla JavaScript",
   "main": "index.js",
   "scripts": {
