@@ -1,9 +1,0 @@
-{
-  "presets": [
-    "@babel/preset-env"
-  ],
-  "plugins": [
-    "es6-promise",
-    "add-module-exports"
-  ]
-}
