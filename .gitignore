@@ -1,15 +1,5 @@
-build
-
-# Grunt
-.grunt
-
-# Node
 node_modules
-bower_components/
-
-# IDEs
 .idea/
-
-# Mac OS
 *\.DS_Store
 .DS_Store
+.rpt2_cache/

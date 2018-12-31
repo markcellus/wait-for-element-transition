@@ -60,7 +60,7 @@ Here's an example where we want to wait for an element's background color to cha
 
 <script type="text/javascript" src="/dist/wait-for-element-transition.min.js"></script>
 <script>
-  let element = document.querySelector('div');
+  const element = document.querySelector('div');
   element.classList.add('red'); // start transition
   waitForElementTransition(element).then(() => {
       // 100 milliseconds later...
@@ -73,5 +73,21 @@ Here's an example where we want to wait for an element's background color to cha
 If the element has already transitioned before the `waitForElementTransition()` is called, the `waitForElementTransition()`s 
 promise will resolve immediately. So you can always guarantee that your code will run, just as it would synchronously.
 
+
+## Alternatives
+
+### The `transitionend` event
+
+Using the `transitionend` or `animationend` events on an Element will allow you to wait until an Element's transition 
+has ended, but this approach is limited:
+
+1. The events don't fire in the case where a transition is removed before completion (i.e. display is set to "none" or if
+the css property is removed) and
+1. The events don't fire when there are no css transition properties specified, which doesn't allow us to run the
+same animation-completion logic on elements which may or may not be animated.
+
+### Web Animations
+
+- Not supported in all browsers like Internet Explorer or Safari
 
 

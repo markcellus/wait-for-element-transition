@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "lib": ["dom", "es5", "es6", "es2015"]
+  },
+  "include": ["*.ts"]
+}
