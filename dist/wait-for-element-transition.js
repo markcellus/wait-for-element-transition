@@ -1,5 +1,5 @@
 /*!
-  * Wait-for-element-transition v3.1.0
+  * Wait-for-element-transition v3.1.1
   * https://github.com/mkay581/wait-for-element-transition#readme
   *
   * Copyright (c) 2020 Mark Kennedy
