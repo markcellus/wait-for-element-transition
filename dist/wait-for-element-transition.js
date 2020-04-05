@@ -1,9 +1,9 @@
 /*!
- * Wait-for-element-transition v3.0.0
- * https://github.com/mkay581/wait-for-element-transition#readme
- *
- * Copyright (c) 2018 Mark Kennedy
- * Licensed under the MIT license
+  * Wait-for-element-transition v3.1.0
+  * https://github.com/mkay581/wait-for-element-transition#readme
+  *
+  * Copyright (c) 2020 Mark Kennedy
+  * Licensed under the MIT license
  */
 
 /**
@@ -21,7 +21,7 @@ const getCssPropUnitMap = (v) => {
     }
     return {
         num,
-        unit
+        unit,
     };
 };
 /**
@@ -49,7 +49,7 @@ function getTransitionDuration(el) {
      */
     const getJsPropName = (cssProp) => {
         // convert to camelCase
-        return cssProp.replace(/-([a-z])/g, letter => {
+        return cssProp.replace(/-([a-z])/g, (letter) => {
             return letter[1].toUpperCase();
         });
     };
@@ -68,7 +68,7 @@ function getTransitionDuration(el) {
     let map;
     times.push.apply(times, delay); // account for delay
     // calculate highest number of time
-    times.forEach(value => {
+    times.forEach((value) => {
         value.split(',').forEach((v) => {
             v = convertCssTimeValueToMilliseconds(v);
             map = getCssPropUnitMap(v);
@@ -84,7 +84,7 @@ function getTransitionDuration(el) {
  */
 function waitForElementTransition(el) {
     const duration = getTransitionDuration(el);
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
         if (duration > 0) {
             setTimeout(() => {
                 resolve(el);
