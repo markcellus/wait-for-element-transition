@@ -5,7 +5,7 @@ import waitForElementTransition from '../wait-for-element-transition';
 const { assert } = chai;
 
 describe('waitForElementTransition', () => {
-    it('when there is a single computed property', done => {
+    it('when there is a single computed property', (done) => {
         const el = document.createElement('div');
         const callbackSpy = sinon.spy();
         let highestTimeMilliseconds = 50;
@@ -21,7 +21,11 @@ describe('waitForElementTransition', () => {
             'after calling waitForElementTransition() on an element that has a transition delay, the callback is not fired immediately because the transition hasnt finished'
         );
         window.setTimeout(() => {
-            assert.equal(callbackSpy.callCount, 1, 'callback is fired after the transition delay time elapses');
+            assert.equal(
+                callbackSpy.callCount,
+                1,
+                'callback is fired after the transition delay time elapses'
+            );
             highestTimeMilliseconds = 100;
             el.style.transitionDelay = '100ms';
             el.style.transitionDuration = highestTimeMilliseconds + 'ms';
@@ -59,7 +63,7 @@ describe('waitForElementTransition', () => {
         }, highestTimeMilliseconds + promiseDelay + 1);
     });
 
-    it('on element that has multiple computed transition properties', done => {
+    it('on element that has multiple computed transition properties', (done) => {
         const el = document.createElement('div') as HTMLDivElement;
         const callbackSpy = sinon.spy();
         let highestTimeMilliseconds = 75;

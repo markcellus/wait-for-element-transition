@@ -6,7 +6,7 @@ export default {
     input: 'wait-for-element-transition.ts',
     output: {
         format: 'esm',
-        file: 'dist/wait-for-element-transition.js'
+        file: 'dist/wait-for-element-transition.js',
     },
     plugins: [resolve(), typescript(), commonjs()],
 };

@@ -1,1 +1,4 @@
 dist/
+package*.json
+.gitignore
+.prettierignore

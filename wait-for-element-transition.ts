@@ -18,7 +18,7 @@ const getCssPropUnitMap = (v: string): CssPropUnitMap => {
     }
     return {
         num,
-        unit
+        unit,
     };
 };
 
@@ -48,7 +48,7 @@ function getTransitionDuration(el: HTMLElement): number {
      */
     const getJsPropName = (cssProp: string): keyof CSSStyleDeclaration => {
         // convert to camelCase
-        return cssProp.replace(/-([a-z])/g, letter => {
+        return cssProp.replace(/-([a-z])/g, (letter) => {
             return letter[1].toUpperCase();
         }) as keyof CSSStyleDeclaration;
     };
@@ -71,7 +71,7 @@ function getTransitionDuration(el: HTMLElement): number {
     times.push.apply(times, delay); // account for delay
 
     // calculate highest number of time
-    times.forEach(value => {
+    times.forEach((value) => {
         value.split(',').forEach((v: string) => {
             v = convertCssTimeValueToMilliseconds(v);
             map = getCssPropUnitMap(v);
@@ -87,9 +87,11 @@ function getTransitionDuration(el: HTMLElement): number {
 /**
  * Builds a transition promise that waits to resolve until the module el's CSS transition is completed (if applicable).
  */
-export default function waitForElementTransition(el: HTMLElement): Promise<HTMLElement> {
+export default function waitForElementTransition(
+    el: HTMLElement
+): Promise<HTMLElement> {
     const duration = getTransitionDuration(el);
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
         if (duration > 0) {
             setTimeout(() => {
                 resolve(el);

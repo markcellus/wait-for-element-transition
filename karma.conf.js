@@ -1,6 +1,6 @@
 const tsconfig = require('./tsconfig.json');
 
-module.exports = function(config) {
+module.exports = function (config) {
     config.set({
         files: ['tests/**/*.ts', '*.ts'],
 
@@ -9,11 +9,11 @@ module.exports = function(config) {
         },
         karmaTypescriptConfig: {
             compilerOptions: {
-                module: "commonjs",
+                module: 'commonjs',
                 sourceMap: true,
-                target: "es6"
+                target: 'es6',
             },
-            exclude: ["node_modules"]
+            exclude: ['node_modules'],
         },
         reporters: ['progress'],
         frameworks: ['mocha', 'karma-typescript'],
@@ -23,6 +23,6 @@ module.exports = function(config) {
         browsers: ['ChromeHeadless'],
         autoWatch: true,
         singleRun: true,
-        concurrency: Infinity
+        concurrency: Infinity,
     });
 };
