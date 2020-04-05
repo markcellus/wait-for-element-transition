@@ -3,7 +3,7 @@ node_js:
     - '8'
 script:
     - npm test
-      - npm run build-dist
+    - npm run build-dist
     - npm run banner
 branches:
     only:
