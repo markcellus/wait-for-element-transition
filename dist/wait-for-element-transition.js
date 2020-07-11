@@ -1,5 +1,5 @@
 /*!
-  * Wait-for-element-transition v3.1.1
+  * Wait-for-element-transition v3.2.0
   * https://github.com/mkay581/wait-for-element-transition#readme
   *
   * Copyright (c) 2020 Mark Kennedy
@@ -58,7 +58,8 @@ function getTransitionDuration(el) {
      */
     const getCssComputedProperty = (prop) => {
         const style = window.getComputedStyle(el);
-        return style.getPropertyValue(prop) || el.style[getJsPropName(prop)];
+        return (style.getPropertyValue(prop) ||
+            el.style[getJsPropName(prop)]);
     };
     const delayProp = getCssComputedProperty('transition-delay') || '0ms';
     const durationProp = getCssComputedProperty('transition-duration') || '0ms';
