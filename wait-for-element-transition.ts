@@ -58,7 +58,10 @@ function getTransitionDuration(el: HTMLElement): number {
      */
     const getCssComputedProperty = (prop: string): string => {
         const style = window.getComputedStyle(el);
-        return style.getPropertyValue(prop) || el.style[getJsPropName(prop)];
+        return (
+            style.getPropertyValue(prop) ||
+            (el.style[getJsPropName(prop)] as string)
+        );
     };
 
     const delayProp = getCssComputedProperty('transition-delay') || '0ms';
