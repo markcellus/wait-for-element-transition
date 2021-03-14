@@ -88,6 +88,6 @@ has ended, but this approach is limited:
 1. The events don't fire when there are no css transition properties specified, which doesn't allow us to run the
    same animation-completion logic on elements which may or may not be animated.
 
-### Web Animations
+### Web Animations API
 
--   Not supported in all browsers like Internet Explorer or Safari
+If done in a supported browser, the same thing in this package can be achieved using the [Web Animations API](https://drafts.csswg.org/web-animations-1/). But consumers of this package may want a less-complex approach.
