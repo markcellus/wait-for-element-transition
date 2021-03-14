@@ -2,3 +2,7 @@ dist/
 package*.json
 .gitignore
 .prettierignore
+*.log
+LICENSE
+.env
+README.md
