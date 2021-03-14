@@ -91,3 +91,18 @@ has ended, but this approach is limited:
 ### Web Animations API
 
 If done in a supported browser, the same thing in this package can be achieved using the [Web Animations API](https://drafts.csswg.org/web-animations-1/). But consumers of this package may want a less-complex approach.
+
+
+## Development
+
+Watch source files while developing:
+
+```bash
+npm start
+```
+
+Run test
+
+```bash
+npm test
+```
