@@ -53,7 +53,7 @@
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^8.0.3",
-    "@types/sinon": "^9.0.0",
+    "@types/sinon": "^10.0.1",
     "banner-cli": "0.14.3",
     "chai": "^4.2.0",
     "dotenv": "^8.2.0",
