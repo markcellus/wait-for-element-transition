@@ -52,7 +52,7 @@
   "homepage": "https://github.com/mkay581/wait-for-element-transition#readme",
   "devDependencies": {
     "@types/chai": "^4.1.7",
-    "@types/mocha": "^8.0.3",
+    "@types/mocha": "^9.1.1",
     "@types/sinon": "^10.0.2",
     "banner-cli": "0.14.3",
     "chai": "^4.2.0",
