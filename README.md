@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/mkay581/wait-for-element-transition.svg?branch=master)](https://travis-ci.com/mkay581/wait-for-element-transition)
+[![Build Status](https://travis-ci.com/markcellus/wait-for-element-transition.svg?branch=master)](https://travis-ci.com/markcellus/wait-for-element-transition)
 [![npm version](https://badge.fury.io/js/wait-for-element-transition.svg)](https://badge.fury.io/js/wait-for-element-transition)
 
 # waitForElementTransition()

@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mkay581/wait-for-element-transition.git"
+    "url": "git+https://github.com/markcellus/wait-for-element-transition.git"
   },
   "engines": {
     "node": ">=10.16"
   },
-  "author": "Mark Kennedy <mark@heyimmark.com> (heyimmark.com)",
+  "author": "Mark",
   "keywords": [
     "css transition",
     "neon animation",
@@ -47,9 +47,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mkay581/wait-for-element-transition/issues"
+    "url": "https://github.com/markcellus/wait-for-element-transition/issues"
   },
-  "homepage": "https://github.com/mkay581/wait-for-element-transition#readme",
+  "homepage": "https://github.com/markcellus/wait-for-element-transition#readme",
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^8.0.3",
