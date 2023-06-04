@@ -2,6 +2,7 @@
   "name": "wait-for-element-transition",
   "version": "3.3.1",
   "description": "Easily wait for an element to complete it's transition using native vanilla JavaScript",
+  "type": "module",
   "main": "dist/wait-for-element-transition.js",
   "types": "dist/wait-for-element-transition.d.ts",
   "files": [
